@@ -2,6 +2,7 @@
 #include <AccelStepper.h>
 #include <ArtnetWifi.h>
 #include <Arduino.h>
+#include <EEPROM.h>
 
 //Wifi settings
 const char* ssid = "EX_FUTUR";
@@ -15,14 +16,18 @@ const int startUniverse = 0;
 const char host[] = "192.168.50.45";
 
 
+int addr = 0;
+#define EEPROM_SIZE 32
+
 int ena_pin=12;
 int led_pin=14;
 
 int pos,pos_temp,dir,ena,set_maxUp,set_maxDown,moveUp,moveDown,stop_motor;
-int maxDown=120;
+int maxDown=0;
 int led;
 int vitesse=1000,vitesse_temp=1000;
 int id;
+int id_all=10;
 int fin_course_pin=21;
 int direct_move=0;
 int valid=0;
@@ -35,7 +40,10 @@ void setup()
 {
   Serial.begin(115200);
   ConnectWifi();
-
+EEPROM.begin(EEPROM_SIZE);
+EEPROM.get(0, maxDown);
+Serial.print("maxdown saved:");
+Serial.println(maxDown);
 
   artnet.setArtDmxCallback(onDmxFrame);
   artnet.begin(host);
@@ -95,7 +103,7 @@ if (set_maxUp==1){
   Serial.println("home");
 }
 if(digitalRead(fin_course_pin)==HIGH){
-       artnet.setByte(200+id, 1);
+       artnet.setByte(299+id, 1);
        artnet.write();
 
 }
@@ -103,6 +111,8 @@ if(digitalRead(fin_course_pin)==HIGH){
 if (set_maxDown==1){
 
   moveDown=0;
+EEPROM.put(0, maxDown);
+EEPROM.commit();
   maxDown=stepper.currentPosition();
   stepper.runToNewPosition(maxDown);
 

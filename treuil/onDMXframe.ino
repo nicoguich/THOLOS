@@ -18,15 +18,21 @@ stop_motor=data[(id*nb_adress)+10];
 
 ////adress all
 if (data[511]==255){
-pos=data[102];
-vitesse=data[103]*10;
-moveUp=data[106];
-moveDown=data[107];
-led=data[108];
-valid=data[109];
-stop_motor=data[110];
+Serial.println("all activate");
+ena=data[(id_all*nb_adress)+0];
+dir=data[(id_all*nb_adress)+1];
+pos=(data[(id_all*nb_adress)+2])*1;
+vitesse=(data[(id_all*nb_adress)+3]*10);
+set_maxUp=data[(id_all*nb_adress)+4];
+set_maxDown=data[(id_all*nb_adress)+5];
+moveUp=data[(id_all*nb_adress)+6];
+moveDown=data[(id_all*nb_adress)+7];
+led=data[(id_all*nb_adress)+8];
+valid=data[(id_all*nb_adress)+9];
+stop_motor=data[(id_all*nb_adress)+10];
 }
-printdata();
+
+
 
 
 if (vitesse_temp!= vitesse){
@@ -47,5 +53,5 @@ analogWrite(led_pin,led);
 
 send_artnet();
 
-
+//printdata();
 }
