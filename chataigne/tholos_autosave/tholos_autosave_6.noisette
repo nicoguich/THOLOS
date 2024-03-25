@@ -59,7 +59,7 @@
                   "type": 0,
                   "width": 286,
                   "height": 438,
-                  "currentContent": "Custom Variables",
+                  "currentContent": "Sequences",
                   "tabs": [
                     {
                       "name": "Custom Variables"
@@ -92,7 +92,7 @@
               "type": 0,
               "width": 1139,
               "height": 1109,
-              "currentContent": "State Machine",
+              "currentContent": "Sequence Editor",
               "tabs": [
                 {
                   "name": "State Machine"
@@ -374,7 +374,7 @@
               "shortName": "_id"
             },
             {
-              "value": 0,
+              "value": 96,
               "hexMode": false,
               "controlAddress": "/_led",
               "type": "Integer",
@@ -460,7 +460,7 @@
               "shortName": "_play"
             },
             {
-              "value": 0,
+              "value": 100,
               "hexMode": false,
               "controlAddress": "/_pos",
               "type": "Integer",
@@ -503,7 +503,7 @@
               "shortName": "_setmaxup"
             },
             {
-              "value": 89,
+              "value": 123,
               "hexMode": false,
               "controlAddress": "/_speed",
               "type": "Integer",
@@ -780,7 +780,7 @@
             {
               "parameters": [
                 {
-                  "value": 0,
+                  "value": 100,
                   "hexMode": false,
                   "controlAddress": "/pos",
                   "feedbackOnly": false,
@@ -799,7 +799,7 @@
             {
               "parameters": [
                 {
-                  "value": 89,
+                  "value": 123,
                   "hexMode": false,
                   "controlAddress": "/vitesse",
                   "feedbackOnly": false,
@@ -818,7 +818,7 @@
             {
               "parameters": [
                 {
-                  "value": 0,
+                  "value": 96,
                   "hexMode": false,
                   "controlAddress": "/led",
                   "feedbackOnly": false,
@@ -2189,10 +2189,10 @@
                     "command": {
                       "parameters": [
                         {
-                          "value": 21,
+                          "value": 22,
                           "controlMode": 2,
                           "reference": {
-                            "value": "/customVariables/customVariables/values/group/start_add9",
+                            "value": "/customVariables/group/variables/start_add10/start_add10",
                             "controlAddress": "/reference"
                           },
                           "hexMode": false,
@@ -4206,7 +4206,7 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": 0,
+                          "value": 100,
                           "controlMode": 2,
                           "reference": {
                             "value": "/modules/osc/values/_pos",
@@ -8730,8 +8730,7 @@
             0
           ],
           "viewZoom": 1.0
-        },
-        "editing": true
+        }
       },
       {
         "parameters": [
@@ -8747,6 +8746,10 @@
           "items": [
             {
               "parameters": [
+                {
+                  "value": false,
+                  "controlAddress": "/enabled"
+                },
                 {
                   "value": 156.0,
                   "controlAddress": "/listSize"
@@ -8766,7 +8769,7 @@
                       "controlAddress": "/length"
                     },
                     {
-                      "value": 5.539999961853027,
+                      "value": 15.61999988555908,
                       "controlAddress": "/position"
                     },
                     {
@@ -9347,7 +9350,8 @@
             0
           ],
           "viewZoom": 1.0
-        }
+        },
+        "editing": true
       },
       {
         "parameters": [

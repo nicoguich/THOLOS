@@ -22,12 +22,15 @@ bool ConnectWifi(void)
     i++;
   }
   if (state) {
+    digitalWrite(13,HIGH);
     Serial.println("");
     Serial.print("Connected to ");
     Serial.println(ssid);
     Serial.print("IP address: ");
+    
     Serial.println(IPAddress(WiFi.localIP()));
   } else {
+    digitalWrite(13,LOW);
     Serial.println("");
     Serial.println("Connection failed.");
   }

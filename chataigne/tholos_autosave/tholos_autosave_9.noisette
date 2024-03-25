@@ -335,21 +335,6 @@
               "minValue": 0,
               "maxValue": 1,
               "default": true,
-              "controlAddress": "/_hard_stop",
-              "type": "Boolean",
-              "niceName": "/hard_stop",
-              "customizable": true,
-              "removable": true,
-              "description": "",
-              "hideInEditor": false,
-              "feedbackOnly": false,
-              "shortName": "_hard_stop"
-            },
-            {
-              "value": false,
-              "minValue": 0,
-              "maxValue": 1,
-              "default": true,
               "controlAddress": "/_home",
               "type": "Boolean",
               "niceName": "/home",
@@ -361,7 +346,7 @@
               "shortName": "_home"
             },
             {
-              "value": 1,
+              "value": 0,
               "hexMode": false,
               "controlAddress": "/_id",
               "type": "Integer",
@@ -460,7 +445,7 @@
               "shortName": "_play"
             },
             {
-              "value": 0,
+              "value": 55,
               "hexMode": false,
               "controlAddress": "/_pos",
               "type": "Integer",
@@ -503,7 +488,7 @@
               "shortName": "_setmaxup"
             },
             {
-              "value": 89,
+              "value": 250,
               "hexMode": false,
               "controlAddress": "/_speed",
               "type": "Integer",
@@ -552,7 +537,7 @@
             {
               "parameters": [
                 {
-                  "value": 1,
+                  "value": 0,
                   "hexMode": false,
                   "controlAddress": "/id",
                   "feedbackOnly": false,
@@ -571,7 +556,7 @@
             {
               "parameters": [
                 {
-                  "value": 12,
+                  "value": 1,
                   "hexMode": false,
                   "controlAddress": "/start_add0",
                   "feedbackOnly": false,
@@ -590,7 +575,7 @@
             {
               "parameters": [
                 {
-                  "value": 13,
+                  "value": 2,
                   "hexMode": false,
                   "controlAddress": "/start_add1",
                   "feedbackOnly": false,
@@ -609,7 +594,7 @@
             {
               "parameters": [
                 {
-                  "value": 14,
+                  "value": 3,
                   "hexMode": false,
                   "controlAddress": "/start_add2",
                   "feedbackOnly": false,
@@ -628,7 +613,7 @@
             {
               "parameters": [
                 {
-                  "value": 15,
+                  "value": 4,
                   "hexMode": false,
                   "controlAddress": "/start_add3",
                   "feedbackOnly": false,
@@ -647,7 +632,7 @@
             {
               "parameters": [
                 {
-                  "value": 16,
+                  "value": 5,
                   "hexMode": false,
                   "controlAddress": "/start_add4",
                   "feedbackOnly": false,
@@ -666,7 +651,7 @@
             {
               "parameters": [
                 {
-                  "value": 17,
+                  "value": 6,
                   "hexMode": false,
                   "controlAddress": "/start_add5",
                   "feedbackOnly": false,
@@ -685,7 +670,7 @@
             {
               "parameters": [
                 {
-                  "value": 18,
+                  "value": 7,
                   "hexMode": false,
                   "controlAddress": "/start_add6",
                   "feedbackOnly": false,
@@ -704,7 +689,7 @@
             {
               "parameters": [
                 {
-                  "value": 19,
+                  "value": 8,
                   "hexMode": false,
                   "controlAddress": "/start_add7",
                   "feedbackOnly": false,
@@ -723,7 +708,7 @@
             {
               "parameters": [
                 {
-                  "value": 20,
+                  "value": 9,
                   "hexMode": false,
                   "controlAddress": "/start_add8",
                   "feedbackOnly": false,
@@ -742,7 +727,7 @@
             {
               "parameters": [
                 {
-                  "value": 21,
+                  "value": 10,
                   "hexMode": false,
                   "controlAddress": "/start_add9",
                   "feedbackOnly": false,
@@ -761,7 +746,7 @@
             {
               "parameters": [
                 {
-                  "value": 22,
+                  "value": 11,
                   "hexMode": false,
                   "controlAddress": "/start_add10",
                   "feedbackOnly": false,
@@ -780,7 +765,7 @@
             {
               "parameters": [
                 {
-                  "value": 0,
+                  "value": 55,
                   "hexMode": false,
                   "controlAddress": "/pos",
                   "feedbackOnly": false,
@@ -799,7 +784,7 @@
             {
               "parameters": [
                 {
-                  "value": 89,
+                  "value": 250,
                   "hexMode": false,
                   "controlAddress": "/vitesse",
                   "feedbackOnly": false,
@@ -930,7 +915,7 @@
                     "command": {
                       "parameters": [
                         {
-                          "value": 12,
+                          "value": 1,
                           "controlMode": 2,
                           "reference": {
                             "value": "/customVariables/group/variables/start_add0/start_add0",
@@ -987,7 +972,7 @@
                     "command": {
                       "parameters": [
                         {
-                          "value": 12,
+                          "value": 1,
                           "controlMode": 2,
                           "reference": {
                             "value": "/customVariables/group/variables/start_add0/start_add0",
@@ -1049,7 +1034,7 @@
                     "command": {
                       "parameters": [
                         {
-                          "value": 13,
+                          "value": 2,
                           "controlMode": 2,
                           "reference": {
                             "value": "/customVariables/group/variables/start_add1/start_add1",
@@ -1106,7 +1091,7 @@
                     "command": {
                       "parameters": [
                         {
-                          "value": 13,
+                          "value": 2,
                           "controlMode": 2,
                           "reference": {
                             "value": "/customVariables/group/variables/start_add1/start_add1",
@@ -1225,7 +1210,7 @@
                     "command": {
                       "parameters": [
                         {
-                          "value": 14,
+                          "value": 3,
                           "controlMode": 2,
                           "reference": {
                             "value": "/customVariables/group/variables/start_add2/start_add2",
@@ -1303,7 +1288,7 @@
                     "command": {
                       "parameters": [
                         {
-                          "value": 15,
+                          "value": 4,
                           "controlMode": 2,
                           "reference": {
                             "value": "/customVariables/customVariables/values/group/start_add3",
@@ -1380,7 +1365,7 @@
                     "command": {
                       "parameters": [
                         {
-                          "value": 16,
+                          "value": 5,
                           "controlMode": 2,
                           "reference": {
                             "value": "/customVariables/group/variables/start_add4/start_add4",
@@ -1408,7 +1393,7 @@
                     "command": {
                       "parameters": [
                         {
-                          "value": 16,
+                          "value": 5,
                           "controlMode": 2,
                           "reference": {
                             "value": "/customVariables/group/variables/start_add4/start_add4",
@@ -1501,7 +1486,7 @@
                     "command": {
                       "parameters": [
                         {
-                          "value": 17,
+                          "value": 6,
                           "controlMode": 2,
                           "reference": {
                             "value": "/customVariables/group/variables/start_add5/start_add5",
@@ -1529,7 +1514,7 @@
                     "command": {
                       "parameters": [
                         {
-                          "value": 17,
+                          "value": 6,
                           "controlMode": 2,
                           "reference": {
                             "value": "/customVariables/group/variables/start_add5/start_add5",
@@ -1644,7 +1629,7 @@
                     "command": {
                       "parameters": [
                         {
-                          "value": 18,
+                          "value": 7,
                           "controlMode": 2,
                           "reference": {
                             "value": "/customVariables/group/variables/start_add6/start_add6",
@@ -1712,7 +1697,7 @@
                     "command": {
                       "parameters": [
                         {
-                          "value": 18,
+                          "value": 7,
                           "controlMode": 2,
                           "reference": {
                             "value": "/customVariables/group/variables/start_add6/start_add6",
@@ -1774,7 +1759,7 @@
                     "command": {
                       "parameters": [
                         {
-                          "value": 19,
+                          "value": 8,
                           "controlMode": 2,
                           "reference": {
                             "value": "/customVariables/group/variables/start_add7/start_add7",
@@ -1836,7 +1821,7 @@
                     "command": {
                       "parameters": [
                         {
-                          "value": 19,
+                          "value": 8,
                           "controlMode": 2,
                           "reference": {
                             "value": "/customVariables/group/variables/start_add7/start_add7",
@@ -1921,7 +1906,7 @@
                     "command": {
                       "parameters": [
                         {
-                          "value": 20,
+                          "value": 9,
                           "controlMode": 2,
                           "reference": {
                             "value": "/customVariables/customVariables/values/group/start_add8",
@@ -1975,7 +1960,7 @@
                     "command": {
                       "parameters": [
                         {
-                          "value": 21,
+                          "value": 10,
                           "controlMode": 2,
                           "reference": {
                             "value": "/customVariables/customVariables/values/group/start_add9",
@@ -2039,7 +2024,7 @@
                     "command": {
                       "parameters": [
                         {
-                          "value": 21,
+                          "value": 10,
                           "controlMode": 2,
                           "reference": {
                             "value": "/customVariables/customVariables/values/group/start_add9",
@@ -2131,10 +2116,10 @@
                     "command": {
                       "parameters": [
                         {
-                          "value": 22,
+                          "value": 10,
                           "controlMode": 2,
                           "reference": {
-                            "value": "/customVariables/group/variables/start_add10/start_add10",
+                            "value": "/customVariables/customVariables/values/group/start_add9",
                             "controlAddress": "/reference"
                           },
                           "hexMode": false,
@@ -2189,7 +2174,7 @@
                     "command": {
                       "parameters": [
                         {
-                          "value": 21,
+                          "value": 10,
                           "controlMode": 2,
                           "reference": {
                             "value": "/customVariables/customVariables/values/group/start_add9",
@@ -2340,7 +2325,7 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": 1,
+                          "value": 0,
                           "controlMode": 2,
                           "reference": {
                             "value": "/customVariables/group/variables/id/id",
@@ -2375,7 +2360,7 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": 11,
+                          "value": 10,
                           "hexMode": false,
                           "controlAddress": "/value"
                         }
@@ -2643,7 +2628,7 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": 12,
+                          "value": 1,
                           "controlMode": 2,
                           "reference": {
                             "value": "/customVariables/group/variables/start_add0/start_add0",
@@ -2742,7 +2727,7 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": 12,
+                          "value": 1,
                           "controlMode": 2,
                           "reference": {
                             "value": "/customVariables/group/variables/start_add0/start_add0",
@@ -2841,7 +2826,7 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": 12,
+                          "value": 1,
                           "controlMode": 2,
                           "reference": {
                             "value": "/customVariables/group/variables/start_add0/start_add0",
@@ -2940,7 +2925,7 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": 12,
+                          "value": 1,
                           "controlMode": 2,
                           "reference": {
                             "value": "/customVariables/group/variables/start_add0/start_add0",
@@ -3039,7 +3024,7 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": 12,
+                          "value": 1,
                           "controlMode": 2,
                           "reference": {
                             "value": "/customVariables/group/variables/start_add0/start_add0",
@@ -3138,7 +3123,7 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": 12,
+                          "value": 1,
                           "controlMode": 2,
                           "reference": {
                             "value": "/customVariables/group/variables/start_add0/start_add0",
@@ -3237,7 +3222,7 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": 12,
+                          "value": 1,
                           "controlMode": 2,
                           "reference": {
                             "value": "/customVariables/group/variables/start_add0/start_add0",
@@ -3336,7 +3321,7 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": 12,
+                          "value": 1,
                           "controlMode": 2,
                           "reference": {
                             "value": "/customVariables/group/variables/start_add0/start_add0",
@@ -3435,7 +3420,7 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": 12,
+                          "value": 1,
                           "controlMode": 2,
                           "reference": {
                             "value": "/customVariables/group/variables/start_add0/start_add0",
@@ -3533,7 +3518,7 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": 12,
+                          "value": 1,
                           "controlMode": 2,
                           "reference": {
                             "value": "/customVariables/group/variables/start_add0/start_add0",
@@ -3689,7 +3674,7 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": 1,
+                          "value": 0,
                           "controlMode": 2,
                           "reference": {
                             "value": "/modules/osc/values/_id",
@@ -4206,7 +4191,7 @@
                           "controlAddress": "/operator"
                         },
                         {
-                          "value": 0,
+                          "value": 55,
                           "controlMode": 2,
                           "reference": {
                             "value": "/modules/osc/values/_pos",
@@ -4717,72 +4702,6 @@
                       "parameters": [
                         {
                           "value": "/states/send_DMX/processors/0_ena_1",
-                          "controlAddress": "/target"
-                        }
-                      ],
-                      "paramLinks": {
-                      }
-                    }
-                  }
-                ],
-                "viewOffset": [
-                  0,
-                  0
-                ],
-                "viewZoom": 1.0
-              },
-              "consequencesOff": {
-                "viewOffset": [
-                  0,
-                  0
-                ],
-                "viewZoom": 1.0
-              }
-            },
-            {
-              "niceName": "hardstop",
-              "editorIsCollapsed": true,
-              "type": "Action",
-              "conditions": {
-                "items": [
-                  {
-                    "parameters": [
-                      {
-                        "value": "/modules/osc/values/_hard_stop",
-                        "controlAddress": "/inputValue"
-                      }
-                    ],
-                    "niceName": "From Input Value",
-                    "type": "From Input Value",
-                    "comparator": {
-                      "parameters": [
-                        {
-                          "value": true,
-                          "controlAddress": "/reference"
-                        }
-                      ],
-                      "hideInEditor": true
-                    }
-                  }
-                ],
-                "viewOffset": [
-                  0,
-                  0
-                ],
-                "viewZoom": 1.0
-              },
-              "consequences": {
-                "items": [
-                  {
-                    "niceName": "Consequence",
-                    "type": "Consequence",
-                    "commandModule": "stateMachine",
-                    "commandPath": "Action",
-                    "commandType": "Trigger Action",
-                    "command": {
-                      "parameters": [
-                        {
-                          "value": "/states/send_DMX/processors/10_stop",
                           "controlAddress": "/target"
                         }
                       ],
