@@ -22,15 +22,15 @@ int addr = 0;
 int ena_pin=12;
 int led_pin=14;
 
-int pos,pos_temp,dir,ena,set_maxUp,set_maxDown,moveUp,moveDown,stop_motor;
+int pos,pos_temp,pos_tempall,dir,dir_temp,dir_tempall,ena,ena_temp,ena_tempall,set_maxUp,set_maxUp_temp,set_maxUp_tempall,set_maxDown,set_maxDown_temp,set_maxDown_tempall,moveUp,moveUp_temp,moveUp_tempall,moveDown,moveDown_temp,moveDown_tempall,stop_motor,stop_motor_temp,stop_motor_tempall;
 int maxDown=0;
-int led;
-int vitesse=1000,vitesse_temp=1000;
+int led,led_temp,led_tempall;
+int vitesse=1000,vitesse_temp,vitesse_tempall;
 int id;
 int id_all=10;
 int fin_course_pin=21;
 int direct_move=0;
-int valid=0;
+int valid=0,valid_temp,valid_tempall;
 int nb_adress=11;
 
 
