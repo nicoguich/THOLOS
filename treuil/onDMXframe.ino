@@ -113,7 +113,7 @@ digitalWrite(ena_pin,ena);
 analogWrite(led_pin,led);
 
 
-send_artnet();
+//send_artnet();
 
 //printdata();
 }

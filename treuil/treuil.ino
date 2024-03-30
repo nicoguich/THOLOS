@@ -13,7 +13,7 @@ AccelStepper stepper(1, 27, 33);////driver,step,dir
 WiFiUDP UdpSend;
 ArtnetWifi artnet;
 const int startUniverse = 0;
-const char host[] = "192.168.50.45";
+const char host[] = "192.168.50.30";
 
 
 int addr = 0;
@@ -32,6 +32,7 @@ int fin_course_pin=21;
 int direct_move=0;
 int valid=0,valid_temp,valid_tempall;
 int nb_adress=11;
+int fin_course=0;
 
 
 
@@ -63,7 +64,10 @@ Serial.println(maxDown);
   set_id();
 
 digitalWrite(ena_pin,LOW);
-  
+
+       artnet.setByte(299+id, 0);
+       artnet.write();
+ 
 }
 
 void loop()
@@ -74,8 +78,6 @@ void loop()
       stepper.stop();
        pos=stepper.currentPosition();
        stepper.moveTo(pos);
-      // artnet.setByte((id*10)+2, pos);
-      // artnet.write();
        direct_move=0;
     }
 
@@ -98,28 +100,28 @@ if (set_maxUp==1){
   moveUp=0;
   stepper.setCurrentPosition(0);
   pos=0;
- // stepper.runToNewPosition(0);
-
   Serial.println("home");
 }
+
 if(digitalRead(fin_course_pin)==HIGH){
+  if (fin_course==0){
        artnet.setByte(299+id, 1);
        artnet.write();
-
+       fin_course=1;
+       }
+}
+else{
+  fin_course=0;
 }
 
 if (set_maxDown==1){
-
-  moveDown=0;
+moveDown=0;
 EEPROM.put(0, maxDown);
 EEPROM.commit();
-  maxDown=stepper.currentPosition();
-  stepper.runToNewPosition(maxDown);
-
+maxDown=stepper.currentPosition();
+stepper.runToNewPosition(maxDown);
 }
 
 
-
- 
   stepper.run(); 
 }
