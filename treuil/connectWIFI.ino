@@ -15,11 +15,7 @@ bool ConnectWifi(void)
   while (WiFi.status() != WL_CONNECTED) {
     delay(500);
     Serial.print(".");
-    if (i > 20){
-      state = false;
-      break;
-    }
-    i++;
+    
   }
   if (state) {
     digitalWrite(13,HIGH);
